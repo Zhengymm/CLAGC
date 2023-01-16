@@ -44,7 +44,7 @@ def sample_graph_own(dataset, feature, edge_index, remove_pct, k=None):
     eb_value = [value for key, value in edge_b.items()]
 
     if remove_pct:
-        n_remove = int(G.number_of_edges() * remove_pct / 100)
+        n_remove = int(G.number_of_edges() * remove_pct)
         eb_probs = np.array(eb_value)
         e_index_remove = np.argpartition(eb_probs, -n_remove)[-n_remove:]
 
