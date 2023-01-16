@@ -71,9 +71,9 @@ if __name__ == '__main__':
     parser.add_argument('--mask', type=float, default=0.4)
     parser.add_argument('--k', type=int, default=1)
 
-    parser.add_argument('--twokl', type=float, default=1)
+    parser.add_argument('--rep', type=float, default=1)
     parser.add_argument('--clu', type=float, default=1)
-    parser.add_argument('--onekl', type=float, default=1)
+    parser.add_argument('--pro', type=float, default=1)
     parser.add_argument('--update_p', type=int, default=1)
 
     parser.add_argument('--activation', type=str, default='prelu')
