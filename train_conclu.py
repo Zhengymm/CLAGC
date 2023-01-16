@@ -67,7 +67,7 @@ if __name__ == '__main__':
     parser.add_argument('--out_dim', type=int, default=512)
     parser.add_argument('--pro_hid', type=int, default=1024)
 
-    parser.add_argument('--rm', type=int, default=65)
+    parser.add_argument('--rm', type=float, default=0.65)
     parser.add_argument('--mask', type=float, default=0.4)
     parser.add_argument('--k', type=int, default=1)
 
