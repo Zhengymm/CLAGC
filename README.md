@@ -6,7 +6,7 @@ pretrain.py: pretrain multilevel contrast to get initial parameters and node rep
 
 train_conclu.py: jointly train the whole model.
 
-```
+
 |    Dataset   | Encoding dimension | Projecting dimension | Activation Function | Learning rate |$k$NN|  p_e | p_m | Epoch |  T  |
 |:------------:|:------------------:|:--------------------:|:-------------------:|:-------------:|:---:|:----:|:---:|:-----:|:---:|
 |     Cora     |       512-256      |         1024         |         ReLu        |     0.0001    |  0  | 0.85 | 0.1 |  200  |  1  |
@@ -16,7 +16,7 @@ train_conclu.py: jointly train the whole model.
 |   AmazonCom  |       128-128      |         1024         |        PReLu        |     0.0005    |  10 | 0.65 |  0  |  200  | 200 |
 | Amazon-Photo |       512-128      |         1024         |         ReLu        |    0.00003    |  6  | 0.85 |  0  |  200  |  20 |
 |  Coauthor-CS |       256-256      |         1024         |        PReLu        |     0.001     |  0  |  0.5 |  0  |  200  | 200 |
-```
+
 #### Example:
 
 --neg True: CLAGC-neg model with negative sampling strategy; --neg False: basic CLAGC model
